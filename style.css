@@ -1,0 +1,288 @@
+:root {
+    --sc-fs-h4: 48px;
+    --st-h4-fw: 400;
+    --gnrl-ff: sans-serif;
+    --sec-cl: #313131;
+    --pri-cl: #F0B627;
+    --head-fs: 17px;
+    --main-h3-fs: 64px;
+    --main-h6-fs: 36px;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: var(--gnrl-ff);
+    min-height: 850px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header h4 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--sc-fs-h4);
+    line-height: 72px;
+    color: var(--sec-cl);
+    padding: 20px;
+}
+
+strong {
+    color: var(--pri-cl);
+    font-weight: var(--st-h4-fw);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--sec-cl);
+}
+
+ul {
+    font-style: normal;
+    font-weight: 450;
+    font-size: var(--head-fs);
+    line-height: 22px;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    border-radius: 5px;
+    background: var(--sec-cl);
+    color: white;
+    width: 152px;
+    height: 58px;
+    border: none;
+}
+
+header p {
+    margin-right: 31px;
+}
+
+.fa-moon {
+    font-size: var(--sc-fs-h4);
+    margin-left: 30px;
+}
+
+main h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--main-h3-fs);
+    line-height: 102.5%;
+    color: var(--pri-cl);
+    margin: 0;
+    padding: 0;
+
+}
+
+main h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--main-h6-fs);
+    margin: 0;
+    padding: 0;
+    color: var(--sec-cl);
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    height: 58px;
+    box-sizing: border-box;
+    max-width: 450px;
+    margin-top: 80px;
+
+}
+
+form button {
+    width: 197px;
+    height: 58px;
+    box-sizing: border-box;
+    position: relative;
+    right: 5px;
+
+}
+
+input[type="text"] {
+    margin: 0;
+    padding: 0;
+    height: 58px;
+    width: 246px;
+    border: none;
+    color: var(--sec-cl);
+    font-family: var(--gnrl-ff);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    box-sizing: border-box;
+    border: 1px #313131 solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+@media(max-width: 600px) {
+    :root {
+        --sc-fs-h4: 40px;
+        --head-fs: 25px;
+        --main-h3-fs: 50px;
+
+    }
+
+    form {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+       margin-bottom: 30px ;
+    }
+    form button {
+        margin: 15px 0;
+       
+    }
+
+    input {
+        display: none;
+    }
+
+
+    .fa-moon {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-logo {
+        order: 1;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+
+    .main-text {
+        order: 2;
+        text-align: center;
+    }
+
+    main h6::before {
+        content: "Let's build the physical you";
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--main-h3-fs);
+        line-height: 102.5%;
+        text-align: center;
+        color: var(--pri-cl);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    main h6::after {
+        content: " Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.";
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: var(--gnrl-ff);
+        margin-bottom: 25px;
+    }
+
+    main p {
+        display: none;
+
+    }
+
+    main h3 {
+        display: none;
+        text-align: center;
+    }
+
+}
+
+@media(min-width:600px) {
+    header {
+        display: flex;
+        margin-bottom: 225px;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-header {
+        display: flex;
+    }
+
+    .header-h4 {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+    .header-button {
+        width: 30%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        list-style: none;
+
+    }
+
+    .main-text {
+        width: 45%;
+        padding-top: 25px;
+    }
+
+    .main-logo {
+        width: 55%;
+    }
+
+    .main-text h3 {
+        margin-bottom: 22px;
+    }
+
+    .main-text h6 {
+        margin-bottom: 28px;
+    }
+}
